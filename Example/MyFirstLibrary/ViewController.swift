@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import MyFirstLibrary
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let myFirstLibrary = MyFirstLibrary()
+        myFirstLibrary.showMessage(message: "Hellooooo, this is my first library in iOS!!!")
+        let result = myFirstLibrary.addNumbers(number1: 10, number2: 20)
+        myFirstLibrary.showMessage(message: "Addition : " + String(result))
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,4 +25,3 @@ class ViewController: UIViewController {
     }
 
 }
-

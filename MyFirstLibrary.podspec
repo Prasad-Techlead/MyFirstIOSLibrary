@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MyFirstLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MyFirstLibrary.'
+  s.summary          = 'This is my first ever library in IOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,13 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Prasad-Techlead/MyFirstLibrary'
+  s.homepage         = 'https://github.com/Prasad-Techlead/MyFirstIOSLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Prasad-Techlead' => 'prasad@etechtracker.com' }
-  s.source           = { :git => 'https://github.com/Prasad-Techlead/MyFirstLibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Prasad-Techlead/MyFirstIOSLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'MyFirstLibrary/Classes/**/*'
